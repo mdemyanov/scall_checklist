@@ -36,6 +36,8 @@ class TodoList {
   }
 
   void update() async {
+    _checked.innerHtml = '';
+    _notChecked.innerHtml = '';
     Map service = await SmpAPI.get(_serviceCall.serviceId);
     String settings = service['checkList'];
     if (settings != null) {
