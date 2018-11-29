@@ -1,8 +1,8 @@
 name: scall_checklist
 description: Встраиваемое приложение для Naumen SMP и ITSM 365, которое контролирует заполнение чеклиста на форме добавления заявки
-# version: 1.0.1
-#homepage: https://www.example.com
-#author: mdemyanov <email@example.com>
+version: 1.0.1
+homepage: https://github.com/mdemyanov/scall_checklist
+author: mdemyanov <md@naumen.ru>
 
 environment:
   sdk: '>=2.0.0 <3.0.0'

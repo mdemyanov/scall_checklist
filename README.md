@@ -1,4 +1,4 @@
-An absolute bare-bones web app.
+Простое встраиваемое приложение "Чеклист" Naumen SMP и ITSM 365.
 
-Created from templates made available by Stagehand under a BSD-style
+Получает параметры чеклиста для регистрации заявки, затем проверяет - заполнил ли пользователь.
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).

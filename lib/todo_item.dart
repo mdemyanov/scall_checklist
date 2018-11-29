@@ -12,8 +12,10 @@ class TodoItem {
   Element _checkedElement;
   Element _notCheckedElement;
 
-  TodoItem(this._title, this._checkedElement, this._notCheckedElement, this._finish) {
-    _decor = SvgElement.svg('''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25"
+  TodoItem(this._title, this._checkedElement, this._notCheckedElement,
+      this._finish) {
+    _decor = SvgElement.svg(
+        '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25"
              class="todo__icon">
             <use xlink:href="#todo__box" class="todo__box"></use>
             <use xlink:href="#todo__check" class="todo__check"></use>
@@ -32,12 +34,12 @@ class TodoItem {
 
   void check(Event _) {
     _input.disabled = true;
-    if(_input.checked) {
+    if (_input.checked) {
       append(_checkedElement);
     } else {
       append(_notCheckedElement);
     }
-    if(_notCheckedElement.children.length == 0) {
+    if (_notCheckedElement.children.length == 0) {
       _finish();
     }
   }
